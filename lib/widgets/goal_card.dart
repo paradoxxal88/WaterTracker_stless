@@ -9,16 +9,17 @@ class GoalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: const EdgeInsets.symmetric(horizontal: 24),
       padding: const EdgeInsets.symmetric(vertical: 20),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const Text(
             "Daily Water Goal",
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w600,
@@ -27,6 +28,7 @@ class GoalCard extends StatelessWidget {
           ),
           Text(
             "$glasses",
+            textAlign: TextAlign.center,
             style: const TextStyle(
               fontSize: 96,
               fontWeight: FontWeight.w900,
@@ -36,6 +38,7 @@ class GoalCard extends StatelessWidget {
           ),
           const Text(
             "glasses per day",
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 18,
               color: Color(0xFF4B5563),

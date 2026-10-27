@@ -7,15 +7,12 @@ class WaterTracker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double marginHorizontal = MediaQuery.sizeOf(context).width * 0.3;
-    final double marginVertical = MediaQuery.sizeOf(context).height * 0.06;
-
     return Scaffold(
-      backgroundColor: Color(0xFFF0F3F7),
+      backgroundColor: const Color(0xFFF0F3F7),
       appBar: AppBar(
-        backgroundColor: Color(0xFF3B5FC8),
+        backgroundColor: const Color(0xFF3B5FC8),
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Water Tracker",
           style: TextStyle(
             color: Colors.white,
@@ -23,45 +20,50 @@ class WaterTracker extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.more_vert, color: Colors.white),
+          ),
+        ],
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(
-            horizontal: marginHorizontal,
-            vertical: marginVertical,
-          ),
-
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Icon(Icons.water_drop, size: 100, color: Colors.blue),
-              SizedBox(height: 16),
-              Text(
+              const Icon(Icons.water_drop, size: 90, color: Colors.blue),
+              const SizedBox(height: 16),
+              const Text(
                 "Stay Hydrated!",
+                textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 32,
+                  fontSize: 28,
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
               ),
-
-              SizedBox(height: 6),
-              Text(
+              const SizedBox(height: 6),
+              const Text(
                 "Build a healthy daily habit",
+                textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.grey,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w400,
+                  color: Color(0xFF6B7280),
                 ),
               ),
-              SizedBox(height: 24),
-              GoalCard(glasses: 8),
-              SizedBox(height: 16),
-              WaterButton(text: "Drink water regularly"),
-              SizedBox(height: 12),
-              WaterButton(text: "Bring your water bottle"),
-              SizedBox(height: 20),
-              Text(
+              const SizedBox(height: 24),
+              const GoalCard(glasses: 8),
+              const SizedBox(height: 16),
+              const WaterButton(text: "Drink water regularly"),
+              const SizedBox(height: 12),
+              const WaterButton(text: "Bring your water bottle"),
+              const SizedBox(height: 20),
+              const Text(
                 "Every glass counts!",
+                textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 14, color: Color(0xFF4B5563)),
               ),
             ],

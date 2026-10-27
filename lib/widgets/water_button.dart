@@ -17,6 +17,8 @@ class WaterButton extends StatelessWidget {
       child: Text(
         text,
         textAlign: TextAlign.center,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
         style: const TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.bold,
