@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stay_hydrated/buttons.dart';
-import 'package:stay_hydrated/card_goal.dart';
+import 'package:stay_hydrated/water_button.dart';
+import 'package:stay_hydrated/goal_card.dart';
 
 
 class WaterTracker extends StatelessWidget {
@@ -57,9 +57,9 @@ class WaterTracker extends StatelessWidget {
               SizedBox(height: 24),
               GoalCard(glasses: 8),
               SizedBox(height: 16),
-              Buttons(text: "Drink water regularly"),
+              WaterButton(text: "Drink water regularly"),
               SizedBox(height: 12),
-              Buttons(text: "Bring your water bottle"),
+              WaterButton(text: "Bring your water bottle"),
               SizedBox(height: 20),
               Text(
                 "Every glass counts!",

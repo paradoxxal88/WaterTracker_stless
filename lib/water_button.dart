@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Buttons extends StatelessWidget {
+class WaterButton extends StatelessWidget {
   final String text;
 
-  const Buttons({super.key, required this.text});
+  const WaterButton({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
