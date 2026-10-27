@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stay_hydrated/water_button.dart';
-import 'package:stay_hydrated/goal_card.dart';
-
+import 'package:stay_hydrated/widgets/goal_card.dart';
+import 'package:stay_hydrated/widgets/water_button.dart';
 
 class WaterTracker extends StatelessWidget {
   const WaterTracker({super.key});

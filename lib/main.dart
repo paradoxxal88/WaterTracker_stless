@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stay_hydrated/mainscreen.dart';
+
+import 'screens/mainscreen.dart';
 
 void main() {
   runApp(const StayHydrated());
